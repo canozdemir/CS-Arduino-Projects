@@ -172,12 +172,12 @@ void loop(){
           client.println("<meta name='apple-mobile-web-app-capable' content='yes' />");
           client.println("<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />");
           client.println("<link rel='stylesheet' type='text/css' href='http://homeautocss.net84.net/a.css' />");
-          client.println("<TITLE>Control Panel</TITLE>");
+          client.println("<TITLE>HisarCS Cactus .)</TITLE>");
           client.println("</HEAD>");
           client.println("<BODY>");
-          client.println("<H1>Hisar CS Room Automation Control Panel</H1>");
+          client.println("<H1>HisarCS Cactus Control Panel</H1>");
           client.println("<br />");
-          client.println("Software Version : v1.3beta2");
+          client.println("Software Version : v1");
           client.println("<hr />");
           client.println("<br />");
           client.println(Ethernet.localIP());
@@ -186,14 +186,14 @@ void loop(){
           client.println("<a href=\"/?lighton\"\">Turn On Light</a>");
           client.println("<a href=\"/?lightoff\"\">Turn Off Light</a><br />");
           client.println("<br />");
-          client.println("<a href=\"/?light2on\"\">Turn On Light 2</a>");
-          client.println("<a href=\"/?light2off\"\">Turn Off Light 2</a><br />");
+          //client.println("<a href=\"/?light2on\"\">Turn On Light 2</a>");
+          //client.println("<a href=\"/?light2off\"\">Turn Off Light 2</a><br />");
           client.println("<br />");
-          client.println("<a href=\"/?ledon\"\">Turn On Leds</a>");
-          client.println("<a href=\"/?ledoff\"\">Turn Off Leds</a><br />");
+          //client.println("<a href=\"/?ledon\"\">Turn On Leds</a>");
+          //client.println("<a href=\"/?ledoff\"\">Turn Off Leds</a><br />");
           client.println("<br />");   
 
-          client.print("Light 1: ");
+          client.print("Light : ");
           if (digitalRead(6) == HIGH) {
             client.print("is OFF");
           }
@@ -201,7 +201,7 @@ void loop(){
             client.print("is ON.");
           }
           
-          client.println("<br />");
+          /*client.println("<br />");
           client.print("Light 2: ");
           if (digitalRead(7) == HIGH) {
             client.print("is OFF.");
@@ -218,6 +218,7 @@ void loop(){
           else {
           client.print("are ON.");
           }
+          */
 
           /*client.println("<br />");
           client.print("Nem ");
